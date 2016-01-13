@@ -1003,7 +1003,7 @@ input[type="reset"],
     margin-top: 10px;
 }
 .accordion input[type="radio"]:checked ~ .accslide {
-    width: 450px;
+    width: 350px;
 }
 
 @media (max-width:910px) {
@@ -1105,7 +1105,7 @@ input[type="reset"],
 	}
 
 
-	#banner .main figure img {
+	/* #banner .main figure img {
 		width:100% !important;
 		height:auto;
 	}
@@ -1175,7 +1175,7 @@ input[type="reset"],
 
 	.cap-bot:before { bottom: 10px; left: 10px; }
 	.cap-bot figcaption { left: 0; bottom: -30%;}
-	.cap-bot:hover figcaption { bottom: 0; }
+	.cap-bot:hover figcaption { bottom: 0; } */
 
 
 	#banner .main .thumbnail {
