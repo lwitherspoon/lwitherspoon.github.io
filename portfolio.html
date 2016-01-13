@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -17,12 +16,69 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 		<link rel="stylesheet" type="text/css" href="css/shadowbox.css">
-		<script type="text/javascript" src="js/shadowbox.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
+		<script type="text/javascript" src="js/elastic_grid.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/classie.js"></script>
+		<script type="text/javascript" src="js/elastic_grid.min.js"></script>
 		<script type="text/javascript">
 		Shadowbox.init({
 		    handleOversize: "drag",
 		    modal: true
 		});
+		</script>
+		<script type="text/javascript">
+			$(function(){
+		        $("#portfolio").elastic_grid({
+		            'showAllText' : 'All',
+		            'items' :
+		            [
+		                {
+		                    'title'         : 'Acumatica Moves to Expression Engine',
+		                    'description'   : 'Acumatica"s transition to a content management system went hand in hand with a full company rebrand, including a website redesign. This redesign focused on mobile optimization and engaging graphics.',
+		                    'thumbnail'     : ['images/acumatica_homepage.png', 'images/acumatica_homepage.png'],
+		                    'large'         : ['images/acumatica_full.png', 'images/acumatica_full.png'],
+		                    'tags'          : ['Web Design/Development']
+		                },
+		                {
+		                    'title'         : 'Knowland Transitions to Drupal',
+		                    'description'   : 'The Knowland website was previously hard coded by the product development team. By moving to the Drupal 7 CMS, the marketing team gained full control of the digital corporate message.',
+		                    'thumbnail'     : ['images/knowland_homepage.png', 'images/knowland_homepage.png'],
+		                    'large'         : ['images/knowland_full.png', 'images/knowland_full.png'],
+		                    'tags'          : ['Web Design/Development']
+		                },
+		                {
+		                    'title'         : 'Knowland Website Re-Designed',
+		                    'description'   : 'With a shift in corporate focus, Knowland needed a new "look and feel" for its website, while still maintaining a unified brand and message. This website "refresh" emphasized ease of use and cleanliness.',
+		                    'thumbnail'     : ['images/knowland_homepage2.png', 'images/knowland_homepage2.png'],
+		                    'large'         : ['images/knowland_full_redesign.jpg', 'images/knowland_full_redesign.jpg'],
+		                    'tags'          : ['Web Design/Development']
+		                },
+		                {
+		                    'title'         : 'Cooperative.com Redesign',
+		                    'description'   : 'Description to come.',
+		                    'thumbnail'     : ['images/cooperative_com_thumbnail.png', 'images/cooperative_com_thumbnail.png'],
+		                    'large'         : ['images/cooperative_com.png', 'images/cooperative_com.png'],
+		                    'tags'          : ['Web Design/Development']
+		                },
+		                {
+		                    'title'         : 'Hire Veterans HR Initiative Website',
+		                    'description'   : 'Description to come.',
+		                    'thumbnail'     : ['images/ServeVets_thumbnail.png', 'images/ServeVets_thumbnail.png'],
+		                    'large'         : ['images/ServeVets.png', 'images/ServeVets.png'],
+		                    'tags'          : ['Web Design/Development']
+		                },
+		                {
+		                    'title'         : 'TechAdvantage Conference Website',
+		                    'description'   : 'Description to come.',
+		                    'thumbnail'     : ['images/TechAdvantage_thumbnail.png', 'images/TechAdvantage_thumbnail.png'],
+		                    'large'         : ['images/TechAdvantage.png', 'images/TechAdvantage.png'],
+		                    'tags'          : ['Web Design/Development']
+		                }
+
+		            ]
+		        });
+		    });
 		</script>
 
 		<noscript>
@@ -64,6 +120,8 @@
 					<p>Below are samples of my professional work in web development, design, and digital marketing. Click each icon to enlarge the image.</p>
 
 					<h3>Website Design / Development</h3>
+
+					<div id="portfolio"></div>
 
 					<div class="websites">
 						<div class="row1">
