@@ -1041,6 +1041,11 @@ input[type="reset"],
 
 
 /* Portfolio */
+	.og-grid li>a, .og-grid li>a img {
+		max-width:100%;
+		width:420px;
+	}
+	
 	#banner .main .portfolio {
 		text-align:left;
 	}
