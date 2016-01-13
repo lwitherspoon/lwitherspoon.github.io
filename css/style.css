@@ -1046,6 +1046,13 @@ input[type="reset"],
 		width:350px;
 	}
 	
+	.wagwep-container ul#portfolio-filter a {
+		background:#fff;
+	}
+	.wagwep-container ul#portfolio-filter li.current a {
+		background:#888;
+	}
+	
 	#banner .main .portfolio {
 		text-align:left;
 	}
