@@ -1072,6 +1072,13 @@ input[type="reset"],
 	.wagwep-container ul#portfolio-filter li.current a {
 		background:#888;
 	}
+	@media (max-width:767px) {
+		.wagwep-container ul#portfolio-filter li {
+			width:100%;
+			display:block;
+			clear:both;
+		}
+	}
 	
 	#banner .main .portfolio {
 		text-align:left;
