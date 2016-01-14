@@ -369,6 +369,16 @@ ul.buttons {
 		display: inline-block;
 		padding: 0 0 0 1.5em;
 	}
+	
+	@media (max-width:767px) {
+		ul.buttons li {
+			display:block;
+			padding:0;
+		}
+		ul.buttons li:first-child {
+			margin-bottom:10px;
+		}
+	}
 
 		ul.buttons li:first-child {
 			padding: 0;
@@ -570,6 +580,11 @@ input[type="reset"],
 		top: 0.75em;
 		max-width:200px;
 	}
+	@media (max-width:767px) {
+		#header nav {
+			display:none;
+		}
+	}
 
 		#header nav ul li {
 			display: block;
@@ -728,6 +743,11 @@ input[type="reset"],
 	padding: 12em 0 6em 0;
 	text-align: center;
 }
+@media (max-width:767px) {
+	#banner {
+		padding:4em 0 6em 0;
+	}
+}
 
 #banner img.bg {
   /* Set rules to fill background */
@@ -811,7 +831,7 @@ input[type="reset"],
 			max-width:500px;
 		}
 		#banner .inner header h2 {
-			font-size:2em !important;
+			font-size:1.7em !important;
 		}
 	}
 	
