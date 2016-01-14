@@ -903,6 +903,7 @@ input[type="reset"],
 	}
 	#banner .main li {
 		padding-top:10px;
+		max-width:100%;
 	}
 
 	@media (max-width:480px) {
