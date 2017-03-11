@@ -1,64 +1,47 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Laura Witherspoon | Where design meets development</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.scrollgress.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
-		</noscript>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-	</head>
-	<body class="index">
-	
-		<!-- Header -->
-			<header id="header" class="alt">
+<!DOCTYPE html>
+<html ng-app="personalSite">
 
-				<nav id="nav">
-					<ul>
-						<li class="current"><a href="index.html">Home</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="education.html">Education</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
+  <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/portfolioService.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-		<!-- Banner -->		
-			<section id="banner">
-				<img src="images/bg.png" class="bg">
+  <!-- define angular controller -->
+  <body ng-controller="mainController">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <nav class="navbar" role="navigation" ng-controller="navController">
+            <div class="navbar-header">
+              <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">Menu
+              </button>
+            </div>
+            <div collapse="isCollapsed" class="navbar-collapse bs-js-navbar-collapse">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!-- /.nav-collapse -->
+          </nav>
 
-				<div class="inner">
-					
-					<header>
-						<h2>L. WITHERSPOON</h2>
-					</header>
-					<p>where design meets development.</p>
-					<div style="margin-top:30px;">
-						<ul class="buttons">
-							<li><a href="about.html" class="button fit scrolly">Learn More</a></li>
-							<li><a href="/docs/Resume_LWitherspoon.pdf" target="_blank" class="button fit scrolly">View Resume</a></li>
-						</ul>
-					</div>
-				
-				</div>
-				
-			</section>
-		
-	</body>
+        </div>
+        <div class="col-sm-9 main">
+          <div ng-view=""></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
 </html>
