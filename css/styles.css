@@ -155,9 +155,6 @@ p a:hover {
 #home .buttons .btn {
   width: 32%;
 }
-#home .buttons .btn:first-child {
-  margin-right: 5px;
-}
 #home .buttons .btn:last-child {
   margin-right: 0;
 }
