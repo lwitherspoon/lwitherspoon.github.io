@@ -144,7 +144,6 @@ p a:hover {
 /* Home page styles */
 #home p {
  font-size: 22px;
- text-transform: lowercase;
  text-align: center;
  margin-top: 2rem;
 }
@@ -262,7 +261,7 @@ p a:hover {
 #about img {
   float: right;
   margin: 0 0 5px 20px;
-  width: 150px;
+  width: 100px;
 }
 #about .panel-group .panel {
   border-radius: 0;

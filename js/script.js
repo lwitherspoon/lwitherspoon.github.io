@@ -33,7 +33,6 @@ personalSite.config(function($routeProvider) {
 
 personalSite.controller('navController', function($scope) {
   $scope.isCollapsed = true;
-  console.log($scope.isCollapsed);
   
   $('.navbar a').click(function() {
     var navbar_toggle = $('.navbar-toggle');
