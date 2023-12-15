@@ -1,7 +1,7 @@
 .container {
   display: flex;
   align-items: stretch;
-  height: 100vh;
+  min-height: 100vh;
 
   nav {
     min-width: 200px;

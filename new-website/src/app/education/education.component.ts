@@ -5,9 +5,10 @@ import { CardModule } from 'primeng/card';
 
 interface EducationItem {
   school: string;
-  graduated: number;
+  date: string;
   degree: string;
-  specialization: string;
+  specialization?: string;
+  details?: string;
 }
 
 @Component({
@@ -23,20 +24,29 @@ export class EducationComponent {
   constructor() { 
     this.events = [
       {
+        school: 'AWS', 
+        date: '10/15/2022', 
+        degree: 'Certified AWS Cloud Practitioner',
+        specialization: '',
+        details: '<a href="https://www.credly.com/badges/6849deca-0e50-4332-9b73-463c2a42e509/public_url"><img src="../../assets/aws-certified-cloud-practitioner.png"> Credly certification badge</a>',
+      },
+      {
         school: 'Virginia Polytechnic University', 
-        graduated: 2022, 
+        date: '2022', 
         degree: 'M.A. in Information Technology',
-        specialization: 'Software Development'
+        specialization: 'Software Development',
+        details: '<a href="https://vtmit.vt.edu">Virginia Tech Online Master of Information Technology program</a>',
       },
       {
         school: 'George Mason University', 
-        graduated: 2014, 
+        date: '2014', 
         degree: 'M.A. in Global Affairs',
-        specialization: 'Global Economics & Development'
+        specialization: 'Global Economics & Development',
+        details: '<a href="https://lewitherspoon-gloa720.weebly.com">Some selected samples of my academic work while pursuing my M.A.</a>'
       },
       {
         school: 'James Madison University', 
-        graduated: 2012, 
+        date: '2012', 
         degree: 'B.A. in Modern Foreign Languages',
         specialization: 'French and Russian'
       },
