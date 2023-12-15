@@ -1,0 +1,19 @@
+<header class="label-wrapper">
+  <label>My Education</label>
+</header>
+
+<p-timeline [value]="events" styleClass="customized-timeline">
+  <ng-template pTemplate="marker" let-event>
+      <span class="custom-marker shadow-2" [style.backgroundColor]="event.color">
+          <i [ngClass]="event.icon"></i>
+      </span>
+  </ng-template>
+  <ng-template pTemplate="content" let-event>
+      <p-card [header]="event.school" [subheader]="event.degree" class="m-0">
+          <p>
+            <span>{{ event.graduated }}</span>
+              {{ event.specialization }}
+          </p>
+      </p-card>
+  </ng-template>
+</p-timeline>

@@ -1,0 +1,14 @@
+<header class="label-wrapper">
+  <label>My Career</label>
+</header>
+
+<p-timeline [value]="jobs">
+  <ng-template pTemplate="content" let-job>
+      <p>{{ job.timeframe }}</p>
+      <p>Description here</p>
+  </ng-template>
+  <ng-template pTemplate="opposite" let-job>
+    <label class="p-text-secondary">{{ job.company }}</label>
+    <small>{{ job.title }}</small>
+  </ng-template>
+</p-timeline>
