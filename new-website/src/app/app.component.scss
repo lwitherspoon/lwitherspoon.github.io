@@ -1,17 +1,29 @@
 .container {
   display: flex;
-  align-items: stretch;
-  min-height: 100vh;
+  height: 100%;
 
-  nav {
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
+
+  aside {
+    flex: 1 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 200px;
+    max-width: 200px;
     background: #efefef;
     border-right: 2px solid #ccc;
+
+    @media (max-width: 768px) {
+      max-width: none;
+    }
   }
 
   .content {
     flex-grow: 1;
     position: relative;
-    padding: 2rem;
+    overflow-y: auto;
   }
 }

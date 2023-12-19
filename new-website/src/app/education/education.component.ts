@@ -28,7 +28,7 @@ export class EducationComponent {
         date: '10/15/2022', 
         degree: 'Certified AWS Cloud Practitioner',
         specialization: '',
-        details: '<a href="https://www.credly.com/badges/6849deca-0e50-4332-9b73-463c2a42e509/public_url"><img src="../../assets/aws-certified-cloud-practitioner.png"> Credly certification badge</a>',
+        details: '<a href="https://www.credly.com/badges/6849deca-0e50-4332-9b73-463c2a42e509/public_url" target="_blank"><img src="../../assets/aws-certified-cloud-practitioner.png">Credly certification badge</a>',
       },
       {
         school: 'Virginia Polytechnic University', 

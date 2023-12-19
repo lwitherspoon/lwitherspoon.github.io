@@ -1,22 +1,24 @@
-<header class="label-wrapper">
-  <label>My Education</label>
-</header>
+<section class="wrapper">
+  <header class="label-wrapper">
+    <label>My Education</label>
+  </header>
 
-<p-timeline align="alternate" [value]="events" styleClass="customized-timeline">
-  <ng-template pTemplate="marker" let-event>
-      <span class="custom-marker shadow-2">
-          <i class="pi pi-check"></i>
-      </span>
-  </ng-template>
-  <ng-template pTemplate="content" let-event>
-      <p-card [header]="event.school" [subheader]="event.degree" class="m-0">
-          <p>
-            <span>Graduated: {{ event.date }}</span>
-          </p>
-          <p *ngIf="event.specialization"><span>Specialization:</span>
-            {{ event.specialization }}
-          </p>
-          <p [innerHTML]="event.details"></p>
-      </p-card>
-  </ng-template>
-</p-timeline>
+  <p-timeline align="alternate" [value]="events" styleClass="customized-timeline">
+    <ng-template pTemplate="marker" let-event>
+        <span class="custom-marker shadow-2">
+            <i class="pi pi-check-circle"></i>
+        </span>
+    </ng-template>
+    <ng-template pTemplate="content" let-event>
+        <p-card [header]="event.school" [subheader]="event.degree" class="m-0">
+            <p>
+              <span>Conferred: {{ event.date }}</span>
+            </p>
+            <p *ngIf="event.specialization"><span>Specialization:</span>
+              {{ event.specialization }}
+            </p>
+            <p [innerHTML]="event.details"></p>
+        </p-card>
+    </ng-template>
+  </p-timeline>
+</section>
