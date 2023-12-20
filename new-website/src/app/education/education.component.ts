@@ -42,7 +42,7 @@ export class EducationComponent {
         date: '2014', 
         degree: 'M.A. in Global Affairs',
         specialization: 'Global Economics & Development',
-        details: '<a href="https://lewitherspoon-gloa720.weebly.com">Some selected samples of my academic work while pursuing my M.A.</a>'
+        details: '<a href="https://lewitherspoon-gloa720.weebly.com">Some selected samples of my academic work</a>'
       },
       {
         school: 'James Madison University', 
