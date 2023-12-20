@@ -2,11 +2,13 @@
 @import "primeicons/primeicons.css";
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+@import "../src/styles/colors.scss";
+@import "../src/styles/fonts.scss";
 
 body {
   padding: 0;
   margin: 0;
-  font-family: 'PT Serif', serif;
+  font-family: $ptserif;
   overflow: hidden;
   height: 100vh;
 }
@@ -16,7 +18,16 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $opensans;
+}
+
+a {
+  color: $blue;
+
+  &:hover {
+    color: darken($blue, 10%);
+    transition: color .2s;
+  }
 }
 
 // main content
@@ -29,9 +40,9 @@ h5 {
   margin-bottom: 1rem;
 
   label {
-    font-family: 'Permanent Marker', cursive;
+    font-family: $marker;
     font-size: 1.1rem;
-    background: teal;
+    background: $teal;
     color: white;
     padding: 0.3rem 0.75rem;
   }

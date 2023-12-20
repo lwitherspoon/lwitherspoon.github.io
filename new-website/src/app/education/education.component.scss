@@ -1,9 +1,12 @@
+@import "../../styles/colors.scss";
+
 img {
   width: 75px;
 }
 
 .pi {
-  color: teal;
+  color: $green;
+  font-size: 1.4rem;
 }
 
 .card {

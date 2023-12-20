@@ -1,3 +1,6 @@
+@import "../../styles/colors.scss";
+@import "../../styles/fonts.scss";
+
 ul {
   list-style: none;
   padding: 0;
@@ -16,13 +19,13 @@ ul {
     a {
       text-transform: uppercase;
       text-decoration: none;
-      color: #333;
-      font-family: 'Oswald', sans-serif;
+      color: $darkgray;
+      font-family: $oswald;
     }
 
     .active {
       font-weight: bold;
-      color: teal;
+      color: $teal;
     }
   }
 }
