@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="personalSite">
+
+  <head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/portfolioService.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <!-- define angular controller -->
+  <body ng-controller="mainController">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <nav class="navbar" role="navigation" ng-controller="navController">
+            <div class="navbar-header">
+              <button class="navbar-toggle" type="button" ng-click="isCollapsed = !isCollapsed">Menu
+              </button>
+            </div>
+            <div collapse="isCollapsed" class="navbar-collapse bs-js-navbar-collapse">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!-- /.nav-collapse -->
+          </nav>
+
+        </div>
+        <div class="col-sm-9 main">
+          <div ng-view=""></div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,17 @@
+<div id="portfolioItem" ng-init="initialize()">
+  <a href="#/portfolio" class="back-btn"><span class="glyphicon glyphicon-th-large"></span>Back to Portfolio</a>
+  <h3>{{work.title}}</h3>
+  <img src="{{work.image}}">
+  <p>{{work.description}}</p>
+  <p ng-if="work.url !== null"><a href="{{work.url}}">View Work Live</a></p>
+  
+  <div class="screenshots" ng-hide="work.altImages == null">
+    <h4>Additional Screenshots</h4>
+    <div ng-repeat="image in work.altImages">
+      <figure class="figure">
+        <img src="{{image.url}}" />
+        <figcaption class="figure-caption">{{image.caption}}</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>

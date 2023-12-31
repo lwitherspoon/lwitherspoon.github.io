@@ -1,0 +1,17 @@
+@import "../../styles/colors.scss";
+
+img {
+  width: 75px;
+}
+
+.pi {
+  color: $green;
+  font-size: 1.4rem;
+}
+
+.card {
+  background: var(--surface-card);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
