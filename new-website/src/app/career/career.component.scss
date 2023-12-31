@@ -1,7 +1,13 @@
+@import "../../styles/colors.scss";
+
 small {
   display: block;
 }
 
 p {
   margin-top: 0;
+}
+
+.p-timeline-event-marker {
+  color: $blue;
 }

@@ -5,12 +5,12 @@
   
   <p-timeline [value]="jobs">
     <ng-template pTemplate="content" let-job>
-        <p>{{ job.timeframe }}</p>
         <p>{{ job.description }}</p>
     </ng-template>
     <ng-template pTemplate="opposite" let-job>
-      <label class="p-text-secondary">{{ job.company }}</label>
-      <small>{{ job.title }}</small>
+      <label class="p-text-primary title">{{ job.title }}</label>
+      <small class="p-text-secondary">{{ job.company }}</small>
+      <small class="p-text-secondary">{{ job.timeframe }}</small>
     </ng-template>
   </p-timeline>
 </section>

@@ -10,10 +10,7 @@
         </span>
     </ng-template>
     <ng-template pTemplate="content" let-event>
-        <p-card [header]="event.school" [subheader]="event.degree" class="m-0">
-            <p>
-              <span>Conferred: {{ event.date }}</span>
-            </p>
+        <p-card [header]="event.school" [subheader]="event.degree + ', ' + event.date" class="m-0">
             <p *ngIf="event.specialization"><span>Specialization:</span>
               {{ event.specialization }}
             </p>
